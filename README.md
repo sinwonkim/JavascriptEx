@@ -1,3 +1,4 @@
 # JavascriptEx
 
 test
+`<scirpt>`
