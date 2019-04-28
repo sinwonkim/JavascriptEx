@@ -1,0 +1,55 @@
+객체의 기초 
+1.객체 리터럴 
+-자바스크립트에서는 원시 타입을 제외한 모든 값이 
+ 객체이다.
+-객체는 리터럴과 생성자로 생성할 수 있다.
+-객체는 이름과 값을 한 쌍으로 묶은 데이터를 여러
+ 개 모은 것으로, 연관 배열 혹은 사전이라고도 부른다.
+
+객체 리터럴 
+ex)
+
+var card = {
+   suit : "하트",
+   amy : "Hi"
+};
+{...} 부분이 객체 리터럴이며, 위의 예제는 객체 리터럴을 변수 card에 대입하고 있는 것이다.
+console.log(card);
+변수에 대입된 객체안의 프로퍼티 값을 읽거나 쓸 떄는
+마침표(.) 연산자 또는 대괄호 []연산자를 사용한다.
+
+console.log(card);
+consol.log(card["suit"]);
+
+프로퍼티 추가와 삭제 
+card.value = 14;
+
+
+프로퍼티 이름을 뜻하는 문자열 
+in 객체명을 통해 객체에 특정 프로퍼티가 있는지
+확인할 수 있다.
+
+console.log("suit" in card);
+
+var obj = {
+	name : "홍길동",
+	age : 18,
+	marrie : ture
+};
+
+if("address" in obj){
+ obj.value = "seoul";
+}
+console.log("address" in obj);
+
+객체의 기초 - 메소드 
+프로퍼티에 저장된 값의 타입이 함수이면 그 프로퍼티를 메소드라고 부른다.
+
+var obj = {
+	func : function print(param) {
+
+	}	
+}
+
+var num = 10;
+obj.func(num);
